@@ -1,0 +1,128 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+#container {
+    display: flex;
+    width: 430px;
+    height: 330px;
+    background-color: white;
+    margin: 80px auto;
+    border-radius: 5px;
+}
+
+picture img {
+    width: 200px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.perfume {
+    padding-top: 5px;
+    color: hsl(20, 2%, 72%);
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.product-name {
+    margin-top: 5px;
+    padding-right: 50px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 0;
+}
+
+.description p {
+    padding-right: 19px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', 'sans-serif';
+    color: hsl(0, 0%, 57%);
+}
+
+.description h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    color: hsl(158, 58%, 36%);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.description span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-small;
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: hsl(0, 0%, 57%);
+}
+
+button {
+    margin-top: 11px;
+    border: none;
+    padding: 10px 55px;
+    background-color: hsl(158, 58%, 29%);
+    color: white;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container .cart {
+    width: 11px;
+    position: relative;
+    left: 25%;
+    top: 2px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 18%);
+    cursor: pointer;
+}
+
+
+/* Rsponsive */
+
+@media screen and (max-width:375px) {
+    #container {
+        flex-direction: column;
+        width: 320px;
+        height: 530px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    picture img {
+        width: 320px;
+        height: 100%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .description {
+        margin-right: 20px;
+    }
+    .description h4 {
+        font-size: 25px;
+    }
+    button {
+        padding: 15px 80px;
+        margin: 20px auto;
+    }
+}
+
+
+/* iframe {
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+} */
